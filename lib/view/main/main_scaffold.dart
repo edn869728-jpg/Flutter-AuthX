@@ -88,6 +88,7 @@ class _BottomNavBar extends StatelessWidget {
   static const double _barHeight = 72;
   static const double _fabSize = 64;
   static const double _fabLift = 22; // how far above the bar the FAB sits
+  static const double _fabVerticalOffset = 6; // fine-tune so FAB sits flush above the bar
 
   @override
   Widget build(BuildContext context) {
@@ -137,7 +138,7 @@ class _BottomNavBar extends StatelessWidget {
           ),
           // Centre FAB-style button + its label
           Positioned(
-            bottom: _barHeight + bottomInset - (_fabSize / 2) - _fabLift + 6,
+            bottom: _barHeight + bottomInset - (_fabSize / 2) - _fabLift + _fabVerticalOffset,
             child: _CenterFab(
               icon: icons[centerIndex],
               label: labels[centerIndex],
