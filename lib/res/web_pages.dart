@@ -15,9 +15,9 @@ class WebPage {
   String url() => '$gasBaseUrl?nextPage=$key';
 }
 
-/// TODO: replace with the real deployed Google Apps Script URL.
+/// Deployed Google Apps Script web-app URL.
 const String gasBaseUrl =
-    'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYMENT_ID/exec';
+    'https://script.google.com/macros/s/AKfycbxCZk9SY7H8aDaVTXq3lmtL1k39QQZk2AiH2Y9YBAEEOJ7e7TvNGjYlRQclKfC0hTd3/exec';
 
 /// Tabs shown in the bottom navigation bar, in display order
 /// (left → right). The center tab (index 2) is rendered as a
