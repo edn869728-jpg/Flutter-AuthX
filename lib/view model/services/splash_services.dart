@@ -12,7 +12,7 @@ class SplashServices{
       if(uid==null){
         Get.toNamed(Routes.signUpScreen);
       }else{
-        Get.toNamed(Routes.homePage);
+        Get.toNamed(Routes.mainScaffold);
       }
     });
   }
